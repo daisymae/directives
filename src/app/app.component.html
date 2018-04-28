@@ -26,8 +26,8 @@
       </div>
       </ul>
       <p appBasicHighlight>Style me with basic directive!</p>
-      <p appBetterHighlight [defaultBackgroundColor]="'yellow'"
-        [highlightColor]="'purple'"
+      <p [appBetterHighlight]="'purple'"
+        defaultBackgroundColor="yellow"
         [defaultColor]="'black'"
         [hoverColor]="'yellow'"
         [afterVisitColor]="'purple'">Style me with a better directive!</p>

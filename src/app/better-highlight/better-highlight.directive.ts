@@ -6,7 +6,8 @@ import { Directive, Renderer2, OnInit, ElementRef, HostListener, HostBinding, In
 export class BetterHighlightDirective implements OnInit {
   // custom property binding
   @Input() defaultBackgroundColor = 'transparent';
-  @Input() highlightColor = 'blue';
+  // option: can set alias
+  @Input('appBetterHighlight') highlightColor = 'blue';
   @Input() defaultColor = 'black';
   @Input() hoverColor = 'white';
   @Input() afterVisitColor = 'purple';
